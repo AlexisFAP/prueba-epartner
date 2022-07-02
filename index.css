@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body{
+    background-color: lightgray !important;
+}
+
+#header-img{
+    width: 100%;
+}
+
+#header-title{
+    position: absolute;
+    width: 300px;
+    left: 12%;
+    top: 20%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 3.5rem;
+    line-height: 100%;
+}
+
+#header-title > span{
+    color: yellow;
+}
+
+#header-btn{
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #0d6efd;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.carousel-text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: gray;
+}
+
+.card:hover > .carousel-text{
+    color: #0d6efd;
+}
+
+.card:hover > .carousel-icon{
+    display: block;
+}
+
+.card:hover.carousel-card::before{
+    display: block !important;
+}
+
+.carousel-card::before{
+    display: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 91%;
+    background: #000000aa;
+    border-radius: 5px;
+}
+
+.carousel-icon{
+    position: absolute;
+    font-size: 5rem;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    color: yellow;
+    display: none;
+}
+
+#container-coleccion{
+   min-height: 550px;
+}
+
+.card-coleccion{
+    height: 390px !important;
+}
+
+.coleccion-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #0d6efd;
+    padding-bottom: 15px;
+}
+
+.coleccion-text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    width: 100%;
+}
+
+.coleccion-btn{
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #0d6efd;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    display: none;
+}
+
+.coleccion-img{
+    width: 100%;
+}
+
+.card-coleccion:hover > div > .coleccion-btn{
+    display: block;
+}
+
+.card-coleccion:hover > div > .coleccion-text::before{
+    display: block;
+}
+
+.coleccion-text::before{
+    content: 'Silla de Ruedas Motorizada gris metalizada abatible M2000';
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background-color: lightgray;
+    display: none;
+}
+
+.card{
+    border: none !important;
+}
